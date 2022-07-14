@@ -4,16 +4,16 @@ namespace Calculator.ConsoleApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)  //nie zwracająca metoda statyczna klasy
         {
             //1. Wyświetlenie nagłowka - opis aplikacji
             Console.WriteLine("Witaj w aplikacji KALKULATOR!");
 
             //2. Prośba o podanie 1 liczby
             Console.WriteLine("Podaj proszę 1 liczbę:");
-
+            string userX = Console.ReadLine();
             //3. Pobranie liczby od użytkownika
-            var number1 = int.Parse(Console.ReadLine());
+            double number1 = double.Parse(userX);
 
             //4. Prośba o podanie działania
             Console.WriteLine("Jaką operację chcesz wykonać? Możliwe operacje to: '+', '-', '*', '/'.");
@@ -25,10 +25,11 @@ namespace Calculator.ConsoleApp
             Console.WriteLine("Podaj proszę 2 liczbę:");
 
             //7. Pobranie liczby od użytkownika
-            var number2 = int.Parse(Console.ReadLine());
+            string userY = Console.ReadLine();
+            double number2 = double.Parse(userY);
 
             //8. Wykonanie obliczeń
-            var result = 0;
+            double result = 0;
 
             switch (operation)
             {
