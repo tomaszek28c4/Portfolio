@@ -3,13 +3,12 @@ Console.WriteLine("SZACHOWNICA!");
 
 for (int i = 1; i <=1 ;i++ )
 
-    Console.WriteLine("01010101");
-    Console.WriteLine("10101010");
+    Console.WriteLine();
 {
-    for (int j = 1; j <= 3; j++)
+    for (int j = 1; j <= 4; j++)
     {
-        Console.WriteLine("01010101");
         Console.WriteLine("10101010");
+        Console.WriteLine("01010101");
     }
 
 
