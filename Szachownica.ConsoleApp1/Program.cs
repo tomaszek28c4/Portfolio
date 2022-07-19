@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Szachownica.ConsoleApp1;
+
 Console.WriteLine("Hello World!");
 
 for (int i = 1; i <=1 ;i++ )
@@ -58,3 +60,5 @@ for (int i = 0; i < 8; i++)
     Console.WriteLine();
 }
 Console.WriteLine("Sukces");
+foreachkolekcja fk = new foreachkolekcja();
+fk.example();
