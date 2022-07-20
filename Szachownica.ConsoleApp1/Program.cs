@@ -61,5 +61,7 @@ for (int i = 0; i < 8; i++)
 }
 Console.WriteLine("Sukces");
 foreachkolekcja fk = new foreachkolekcja();
-fk.example();
 fk.IsFemale(" Basia");
+fk.example();
+fk.revers("terazhuj");
+fk.odwrotnie("druga petla");
