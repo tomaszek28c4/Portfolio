@@ -12,7 +12,7 @@ namespace Szachownica.ConsoleApp1
         {
             string[] citizens = new string[]
             {
-                "Tomek" , "Bartek" , "Karol" , "Ania" , "Karolina" , "Basia" , "Romek"
+                "Tomek" , "Bartek" , "Karol" , "Romek" , "Ania" , "Karolina" , "Basia" , "Romek"
             };
             CitizenEntity[] citizenEntities =new CitizenEntity[citizens.Length];
             int i = 0;
@@ -40,6 +40,10 @@ namespace Szachownica.ConsoleApp1
                 i++;
                 
             }
+
+            IsFemale("Adrianna");
+            Console.WriteLine("Podaj imie");
+            IsFemale(Console.ReadLine());
             Console.WriteLine($"mężczyzn:{man} , kobiet {women}");
             return citizenEntities;
         }
@@ -49,9 +53,9 @@ namespace Szachownica.ConsoleApp1
 
         {    if (candidate[candidate.Length - 1] == 'a') 
             {
-                Console.WriteLine("Is female"); return true;
+                Console.WriteLine("Kobieta: " + candidate);  return true;
             }
-            Console.WriteLine("Is not a female"); return false;
+            Console.WriteLine("Mężczyzna: " + candidate); return false;
                
 
 
