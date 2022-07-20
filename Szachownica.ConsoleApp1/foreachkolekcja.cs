@@ -75,7 +75,7 @@ namespace Szachownica.ConsoleApp1
         }
         public void odwrotnie(string odwrot)
         {
-            for (int i = odwrot.Length; i<=0 ; i--)     
+            for (int i = odwrot.Length-1; i>=0 ; i--)     
                 Console.Write(odwrot[i]);
         }
     }  
