@@ -6,11 +6,30 @@
 
         static void Main(string[] arg)
         {
-            Trojkat t = new Trojkat();
-            t.akceptujparametry();
+            for (int i = 1; i <= 3; i++)
+            {
+
+
+                Trojkat t = new Trojkat();
+                t.akceptujparametry();
+
+
+                if (i == 3)
+                {
+                    break;
+                }
+
+            }
         }
+
+
+       
+        
+        
         class Trojkat
         {  // klasa Trojkat;
+
+
 
 
             double PoleTrojkata; //
@@ -31,12 +50,12 @@
 
                 Console.WriteLine("Powierzchnia: " + powierzchnia);
             }
-
-
-
         }
+
     }
 }
+
+
 
 
 

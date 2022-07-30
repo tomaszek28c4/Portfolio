@@ -15,6 +15,8 @@
             string wysokosc;
             double userp;  // zmienna liczbowa z ułamkiem
             double userw;
+
+
             public void akceptujparametry()
 
             {

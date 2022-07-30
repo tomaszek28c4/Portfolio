@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System;
+
 Console.WriteLine("Hello, World!");
 
 KolekcjaImiona fk = new KolekcjaImiona();
@@ -8,10 +10,13 @@ public class KolekcjaImiona //nazwa klasy
     public KolekcjaImion[] Exampel
         ()//sygnatura metody wywoływanej z klasy KolekcjaImiona
     {
-        string[] mieszkancy = new string[] //tabela imion
 
+
+        string[] mieszkancy = new string[]; //tabela imion
+        Console.WriteLine("Podaj imie");
         {
-            "Tomek" , "Romek" , "Bartek" , "Julka" , "Zuzia" , "Ania"
+        
+            
         };
 
         KolekcjaImion[] KolekcjaImion = new KolekcjaImion[mieszkancy.Length]; //Klasa-Zmienna-nowaKlasa
