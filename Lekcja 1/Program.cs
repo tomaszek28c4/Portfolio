@@ -1,47 +1,39 @@
-﻿namespace kwadrat
+﻿namespace Lekcje
 {
     class Program
     {
         public static void Main(string[] args)
         {
-
-            for (int i = 1; i <= 5; i++)
+            for (int i = 1; i <= 3; i++) 
             {
 
+               
                 
-                    {
-                        string wysokosc;
-                        string podstawa;
-                        double user1;
-                        double user2;
+                string podstawa;
+                string wysokosc;
+                double user1;
+                double user2;
+                double pole;
 
 
-                        //podaj wysokość
-                        Console.WriteLine("Podaj Wysokość");
-                        wysokosc = Console.ReadLine();
-                        //podaj podstawe
-                        Console.WriteLine("Podaj podstawe");
-                        podstawa = Console.ReadLine();
-                        double.TryParse(wysokosc, out user1);
-                        double.TryParse(podstawa, out user2);
-                        //działanie
-                        double pole = user1 * user2;
 
-                        Console.WriteLine("Pole powierzchni to    " + pole);
-                    }
+                Console.WriteLine("Podaj podstawe");
+                podstawa = Console.ReadLine();
+                Console.WriteLine("Podaj wysokosc");
+                wysokosc = Console.ReadLine();
+                double.TryParse(podstawa, out user1);
+                double.TryParse(wysokosc, out user2);
+                //działanie
+                pole = user1 * user2;
+                Console.WriteLine( "Pole wynosi    " + pole );
 
-                if (i == 5)
-                {
-                    break;
-
-                }
+                
 
             }
 
-
+            
 
         }
-
     }
-
 }
+
