@@ -11,7 +11,7 @@ namespace Obiekty.Polimorfizm2.Cars
         protected int Rounds;
         protected int RoundsShiftUp;
 
-        protected Car(int roundsShiftUp)
+        protected Car(int roundsShiftUp) // to jest kostruktar dla "base"
         {
 
         }

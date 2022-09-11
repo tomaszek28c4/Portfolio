@@ -12,7 +12,7 @@
 
         public override void SpeedUp()
         {
-            Speed += 2;
+            Speed += 20;
 
         }
         public override void DisplayStatus()

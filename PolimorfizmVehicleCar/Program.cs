@@ -15,14 +15,14 @@ namespace PolimorfizmVehicleCar
             Honda.BluetoothConnection();
             Tesla.BluetoothConnection();
 
-           // Car HondaAsCar = Honda as Car;
-           // Car TeslaAsCar = Tesla as Car;
+            //Car HondaAsCar = Honda as Car;
+            //Car TeslaAsCar = Tesla as Car;
            // HondaAsCar.DisplayStatus();
            // TeslaAsCar.DisplayStatus();
 
            // Vehicle HondaAsVehicle = Honda as Vehicle;
            // Vehicle TeslaAsVehicle = Tesla as Vehicle;
-           //  HondaAsVehicle.DisplayStatus();
+           // HondaAsVehicle.DisplayStatus();
             // TeslaAsVehicle.DisplayStatus();
 
 

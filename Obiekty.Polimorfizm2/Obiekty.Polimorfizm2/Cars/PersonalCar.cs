@@ -8,7 +8,7 @@ namespace Obiekty.Polimorfizm2.Cars
 {
     public class PersonalCar : Car
     {
-        public PersonalCar() : base(5000)
+        public PersonalCar() : base(5000) //base oznacza wywołanie bazowego kostruktora tutaj z klasy CAR
         {
         }
 

@@ -55,7 +55,7 @@
                 podstawa = Console.ReadLine();
                 double.TryParse(wysokosc, out user1);
                 double.TryParse(podstawa, out user2);
-                pole = user1 * user2;
+                pole = (user1 / 2) * user2;
                 Console.WriteLine("Pole trójkąta wynosi   :" + pole);
                 Console.WriteLine();
 
