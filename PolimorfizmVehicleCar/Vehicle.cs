@@ -11,7 +11,7 @@
 
         public virtual void DisplayStatus()
         {
-            Console.WriteLine($" Speed { Speed} Energy { EnergyType}");
+            Console.WriteLine($" Speed {Speed} Energy {EnergyType}");
         }
 
         public abstract Energy EnergyType { get; }

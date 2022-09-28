@@ -17,7 +17,7 @@
                 {
                     if (h.Wiek > num)
                     {
-                        Console.WriteLine(h.imie);
+                        Console.WriteLine($" { h.imie} { h.nazwisko} {h.Wiek} {h.gender}");
                     }
                 }
             }

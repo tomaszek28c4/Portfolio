@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PolimorfizmVehicleCar
+﻿namespace PolimorfizmVehicleCar
 {
-    public sealed class ElectricCar : Car  , IAndroidAuto //tesla Car dziedziczy po Car
+    public sealed class ElectricCar : Car   //tesla Car dziedziczy po Car
     {
-        public ElectricCar() : base ("Tesla" , "P90") { } //base - ozdziedziczy zmienne string brand i string type z klasy Car
+        public ElectricCar() : base("Tesla", "P90") { } //base - ozdziedziczy zmienne string brand i string type z klasy Car
         public override Energy EnergyType => Energy.Electric;
 
         public void BluetoothConnection()
@@ -28,5 +22,7 @@ namespace PolimorfizmVehicleCar
             Console.WriteLine("Im Tesla ");
             Console.WriteLine();
         }
+
+
     }
 }

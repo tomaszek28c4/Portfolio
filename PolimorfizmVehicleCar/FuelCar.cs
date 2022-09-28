@@ -1,6 +1,6 @@
 ﻿namespace PolimorfizmVehicleCar
 {
-    public class FuelCar : Car, IAndroidAuto // Honda car dziedziczy po Car
+    public class FuelCar : Car // Honda car dziedziczy po Car
     {
 
         public FuelCar() : base("Honda", " Civic") { } //base - ozdziedziczy zmienne string brand i string type z klasy Car
@@ -21,5 +21,7 @@
             Console.WriteLine("Im Honda ");
             Console.WriteLine();
         }
+
+
     }
 }

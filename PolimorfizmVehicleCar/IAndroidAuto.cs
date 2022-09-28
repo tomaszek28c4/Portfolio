@@ -3,5 +3,8 @@
     public interface IAndroidAuto
     {
         void BluetoothConnection();
+
+        bool AccidentOcurred();
+
     }
 }
