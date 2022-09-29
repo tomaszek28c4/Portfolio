@@ -1,8 +1,8 @@
 ﻿namespace Szachownica2
 {
-    abstract public class Rectangel
+    abstract public class Rectangel<T>
     {
-       virtual public void Rect(int a, int b, char borderCh, char fillCh)
+        virtual public void Rect(int a, int b, char borderCh, char fillCh)
         {
             for (int i = 0; i < a; i++)
             {
@@ -19,15 +19,25 @@
             }
 
         }
-        char borderCh;
-        char fillCh;
+
 
 
     }
 
-    class Rectangel1 : Rectangel
+    public class rectangel1<T> : Rectangel<Task>
+
     {
         public override void Rect(int a, int b, char borderCh, char fillCh)
+        {
+            Console.WriteLine("Naspisana metoda Rect");
+
+        }
+    }
+
+
+    public class Rectangel5
+    {
+        public void ReCT(int a, int b, char borderCh, char fillCh)
         {
 
             for (int i = 0; i < a; i++)
@@ -103,7 +113,7 @@
     {
         public static void Main(string[] args)
         {
-            // Rectangel.Rect(5, 100, '#', '*');
+            // rectangel1.Rect(50, 50, '#', '*');
             // Console.WriteLine();
             // Chess.Ches();
             // Console.WriteLine();
@@ -111,18 +121,25 @@
             // Console.WriteLine();
             //Console.ReadKey();
 
-            // Chess<int> chess1 = new Chess<int>();
-            // chess1.Ches(1);
-            List<Rectangel> rect1 = new List<Rectangel>()
+            Chess<int> chess1 = new Chess<int>();
+            chess1.Ches(1);
+            Console.WriteLine();
+
+            List<Rectangel5> rect1 = new List<Rectangel5>()
             {
-                new Rectangel1()
-            };
+                 new Rectangel5()
+             };
 
 
-            foreach( Rectangel rectangel in rect1)
+            foreach (Rectangel5 rectangel in rect1)
             {
-                rectangel.Rect(10,10,'#','*');
+                rectangel.ReCT(10, 10, '#', '*');
             }
+
+            Console.WriteLine();
+
+            rectangel1<int> rect2 = new rectangel1<int>();
+            rect2.Rect(10, 10, '*', '#');
         }
 
     }
