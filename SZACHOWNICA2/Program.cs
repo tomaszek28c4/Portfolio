@@ -1,9 +1,12 @@
 ﻿namespace Szachownica2
 {
-    abstract public class Rectangel<T>
+    public abstract  class Rectangel<T>
     {
+
         virtual public void Rect(int a, int b, char borderCh, char fillCh)
         {
+            Console.WriteLine("Metoda Rect");
+
             for (int i = 0; i < a; i++)
             {
                 for (int j = 0; j < b; j++)
@@ -30,6 +33,19 @@
         public override void Rect(int a, int b, char borderCh, char fillCh)
         {
             Console.WriteLine("Naspisana metoda Rect");
+            for (int i = 0; i < a; i++)
+            {
+                for (int j = 0; j < b; j++)
+                {
+                    if (i == 0 || i == a - 1 || j == 0 || j == b - 1)
+                    {
+                        Console.Write(borderCh);
+                    }
+                    else
+                        Console.Write(fillCh);
+                }
+                Console.WriteLine();
+            }
 
         }
     }
@@ -39,7 +55,7 @@
     {
         public void ReCT(int a, int b, char borderCh, char fillCh)
         {
-
+            Console.WriteLine("Metoda ReCT");
             for (int i = 0; i < a; i++)
             {
                 for (int j = 0; j < b; j++)
@@ -60,6 +76,7 @@
     {
         public void Ches(T parametr)
         {
+            Console.WriteLine("Metoda Ches");
             for (int i = 0; i < 8; i++)
             {
                 for (int x = 0; x < 8; x++)
@@ -125,15 +142,14 @@
             chess1.Ches(1);
             Console.WriteLine();
 
-            List<Rectangel5> rect1 = new List<Rectangel5>()
+            List<Rectangel> rect1 = new List<Rectangel>()
             {
-                 new Rectangel5()
+                 new Rectangel()
              };
 
-
-            foreach (Rectangel5 rectangel in rect1)
+            foreach (Rectangel rectangel in rect1)
             {
-                rectangel.ReCT(10, 10, '#', '*');
+                rectangel.Rect(10, 10, '#', '*');
             }
 
             Console.WriteLine();
