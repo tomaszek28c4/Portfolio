@@ -1,11 +1,11 @@
 ﻿namespace Szachownica2
 {
-    public abstract  class Rectangel<T>
+    public abstract class Rectangel<T>
     {
 
         virtual public void Rect(int a, int b, char borderCh, char fillCh)
         {
-            Console.WriteLine("Metoda Rect");
+            Console.WriteLine("Metoda Rect w klasie Rectangel");
 
             for (int i = 0; i < a; i++)
             {
@@ -32,7 +32,7 @@
     {
         public override void Rect(int a, int b, char borderCh, char fillCh)
         {
-            Console.WriteLine("Naspisana metoda Rect");
+            Console.WriteLine("Naspisana metoda Rect w klasie rectangel1");
             for (int i = 0; i < a; i++)
             {
                 for (int j = 0; j < b; j++)
@@ -55,7 +55,7 @@
     {
         public void ReCT(int a, int b, char borderCh, char fillCh)
         {
-            Console.WriteLine("Metoda ReCT");
+            Console.WriteLine("Metoda ReCT w kalsie Rectangel5");
             for (int i = 0; i < a; i++)
             {
                 for (int j = 0; j < b; j++)
@@ -76,7 +76,7 @@
     {
         public void Ches(T parametr)
         {
-            Console.WriteLine("Metoda Ches");
+            Console.WriteLine("Metoda Ches w klasie Chess");
             for (int i = 0; i < 8; i++)
             {
                 for (int x = 0; x < 8; x++)
@@ -95,6 +95,7 @@
     {
         public static void SetMix(int a, int b, char borderCh, char fillCh)
         {
+            Console.WriteLine("metoda SetMix w klasie Mix");
             for (int i = 0; i < a; i++)
             {
                 for (int j = 0; j < b; j++)
@@ -144,19 +145,31 @@
 
             List<Rectangel> rect1 = new List<Rectangel>()
             {
-                 new Rectangel()
+                 new Rectangel(),
+
              };
 
             foreach (Rectangel rectangel in rect1)
             {
-                rectangel.Rect(10, 10, '#', '*');
+                rectangel.Rect(3, 15, '#', '*');
             }
 
             Console.WriteLine();
+            Console.WriteLine("generyczny typ <string>");
+            rectangel1<string> rect2 = new rectangel1<string>();
+            rect2.Rect(3, 12, '*', '#');
+            
+            Console.WriteLine();
+            Console.WriteLine("generyczny typ <int>");
+            rectangel1<int> rect3 = new rectangel1<int>();
+            rect3.Rect(3, 10, '*', '#');
 
-            rectangel1<int> rect2 = new rectangel1<int>();
-            rect2.Rect(10, 10, '*', '#');
+            Rectangel5 rec = new Rectangel5();
+            rec.ReCT(3, 7, '#', '*');
+
+            Mix.SetMix(3 , 30 , '#' , '*');
         }
+
 
     }
 }
