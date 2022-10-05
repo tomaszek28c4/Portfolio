@@ -38,7 +38,10 @@ namespace ganeryzm1
 
             User bill = userRepository.GetElement("Bill");
 
-            Console.WriteLine(new User());
+
+
+            Console.WriteLine(new User() );
+            Console.WriteLine( userRepository);
 
         }
 
